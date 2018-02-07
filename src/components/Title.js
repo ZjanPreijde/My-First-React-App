@@ -8,9 +8,8 @@ class Title extends PureComponent {
     content: PropTypes.string.isRequired
   }
   render() {
-    return(
-      <h1 className="Title">{ this.props.content }</h1>
-    )
+    const { content } = this.props
+    return  <h1 className="Title">{ content }</h1>
   }
 }
 
